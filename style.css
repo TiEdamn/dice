@@ -1,0 +1,51 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+#cubic{
+    width: 210px;
+    margin: 20px auto;
+    display: table;
+    border: 3px solid;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.dice{
+    width: 33%;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    height: 55px;
+    font-size: 100px;
+}
+        
+.game-field{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.cell{
+    height: 200px;
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+    float:left;
+}
+.row:nth-child(2n+1) .cell{
+    width: 20%;
+    float:left;
+}
+.row:nth-child(2n) .cell{
+    width: 20%;
+    float:right;
+}
+
+.player{
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
